@@ -1,14 +1,13 @@
 import '../styles/CardBook.css'
 
 export function CardBook({ book }) {
-  console.log(book)
   return (
       <div className="cardBook">
         <div className="titleBook">{book.volumeInfo.title}</div>
         <div className="imageBook">
           <img
-            src="https://lorempixel.com/books/150/200/"
-            alt="Imagem do livro"
+            src={!!book.volumeInfo.readingModes.image ? book.volumeInfo.imageLinks.thumbnail : "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Placeholder_book.svg/2000px-Placeholder_book.svg.png"}
+            alt="Imagem do Livro"
           />
         </div>
         <div className="descriptionBook">
