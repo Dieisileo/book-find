@@ -1,20 +1,14 @@
-.resultsBooks {
-  font-family: 'Roboto', sans-serif;
-
-  display: grid;
-  margin: 0 auto;
-  margin-top: 30px;
-  max-width: 900px;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: space-between;
-}
-
 .cardBook {
   background-color: white;
+  border: 1px solid rgb(87, 87, 88);
+  border-radius: 3px;
   max-width: 435px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .titleBook {
+  width: 100%;
   font-size: 25px;
   text-align: center;
   position: relative;
@@ -23,8 +17,16 @@
 .imageBook {
   width: 120px;
   height: auto;
+  margin: 10px;
+}
+
+.imageBook img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .descriptionBook {
-  right: auto;
+  width: 65%;
+  padding-top: 10px;
+  padding-left: 10px;
 }
