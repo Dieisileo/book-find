@@ -56,6 +56,18 @@ form button {
   border: none;
 }
 
+#buttonClear {
+  position: absolute;
+  right: 50px;
+  background: rgb(211 130 9 / 0%);
+  opacity: 0.5;
+}
+
+#iconClear {
+  color: black;
+  font-size: medium;
+}
+
 .resultsBooks {
   font-family: 'Roboto', sans-serif;
 
@@ -66,4 +78,11 @@ form button {
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   gap: 20px;
+}
+
+.boxLoading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
 }
